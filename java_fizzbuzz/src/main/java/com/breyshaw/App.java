@@ -10,6 +10,7 @@ public class App {
         // I had originally had the following more complex if statement last before the
         // else. This was breaking my code when entering a number divisible by both 3 &
         // 5 because it would stop executing at the first true statement.
+        //The following refactor makes the code more dry but introduces nested if statements which could be a bad thing if overused.
         if (number % 5 == 0) {
             if (number % 3 == 0) {
                 System.out.println("Fizzbuzz");
