@@ -7,6 +7,7 @@ public class App {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Number:");
         int number = scanner.nextInt();
+        //I had originally had the following more complex if statement last before the else. This was breaking my code when entering a number divisible by both 3 & 5 because it would stop executing at the first true statement.
         if (number % 5 == 0 && number % 3 == 0) {
             System.out.println("Fizzbuzz");
         } else if (number % 5 == 0) {
